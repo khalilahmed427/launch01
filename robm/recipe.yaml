@@ -1,0 +1,88 @@
+package:
+  name: ros
+  version: 2021.12.16
+
+source:
+  - path: ''
+    folder: ros-noetic-robm/src/work
+
+build:
+  number: 0
+
+about:
+  home: https://www.ros.org/
+  license: BSD-3-Clause
+  summary: |
+    Robot Operating System
+
+extra:
+  recipe-maintainers:
+    - ros-forge
+
+outputs:
+  - package:
+      name: ros-noetic-robm
+      version: 0.3.0
+    about:
+      home: http://moveit.ros.org/
+      license:
+        - BSD
+      summary: An automatically generated package with all the configuration and launch files for using the myrobo with the MoveIt Motion Planning Framework
+      maintainers:
+        - as (as@gmail.com)
+    extra:
+      recipe-maintainers:
+        - robostack
+    build:
+      number: 0
+      script:
+        sel(win): bld_catkin.bat
+        sel(unix): build_catkin.sh
+    requirements:
+      build:
+        - "{{ compiler('cxx') }}"
+        - "{{ compiler('c') }}"
+        - ninja
+        - sel(unix): make
+        - cmake
+        - sel(build_platform != target_platform): python
+        - sel(build_platform != target_platform): cross-python_{{ target_platform }}
+        - sel(build_platform != target_platform): cython
+        - sel(build_platform != target_platform): numpy
+        - sel(build_platform != target_platform): pybind11
+      host:
+        - ros-noetic-catkin
+        - ros-noetic-moveit-ros-move-group
+        - ros-noetic-moveit-fake-controller-manager
+        - ros-noetic-moveit-kinematics
+        - ros-noetic-moveit-planners-ompl
+        - ros-noetic-moveit-ros-visualization
+        - ros-noetic-moveit-setup-assistant
+        - ros-noetic-joint-state-publisher
+        - ros-noetic-joint-state-publisher-gui
+        - ros-noetic-robot-state-publisher
+        - ros-noetic-tf2-ros
+        - ros-noetic-xacro
+      run:
+        - ros-noetic-moveit-ros-move-group
+        - ros-noetic-moveit-fake-controller-manager
+        - ros-noetic-moveit-kinematics
+        - ros-noetic-moveit-planners-ompl
+        - ros-noetic-moveit-ros-visualization
+        - ros-noetic-moveit-setup-assistant
+        - ros-noetic-joint-state-publisher
+        - ros-noetic-joint-state-publisher-gui
+        - ros-noetic-robot-state-publisher
+        - ros-noetic-tf2-ros
+        - ros-noetic-xacro
+        - ros-noetic-moveit-ros-move-group
+        - ros-noetic-moveit-fake-controller-manager
+        - ros-noetic-moveit-kinematics
+        - ros-noetic-moveit-planners-ompl
+        - ros-noetic-moveit-ros-visualization
+        - ros-noetic-moveit-setup-assistant
+        - ros-noetic-joint-state-publisher
+        - ros-noetic-joint-state-publisher-gui
+        - ros-noetic-robot-state-publisher
+        - ros-noetic-tf2-ros
+        - ros-noetic-xacro

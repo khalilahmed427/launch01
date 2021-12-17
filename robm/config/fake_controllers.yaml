@@ -1,0 +1,12 @@
+controller_list:
+  - name: fake_arm_controller
+    joints:
+      - joint01
+      - joint02
+      - joint03
+      - joint04
+      - joint05
+      - joint06
+initial:  # Define initial robot poses.
+  - group: arm
+    pose: dead
