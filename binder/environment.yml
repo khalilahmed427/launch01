@@ -35,7 +35,7 @@ dependencies:
 - ros-noetic-moveit-ros-manipulation
 - ros-noetic-moveit-planners-ompl
 - ros-noetic-moveit-simple-controller-manager
-- robostack ros-noetic-moveit-commander
+- ros-noetic-moveit-commander
 - ros-noetic-moveit-ros-control-interface
 - ros-noetic-moveit-setup-assistant
 - ros-noetic-moveit-plugins
