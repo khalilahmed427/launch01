@@ -3,6 +3,7 @@ channels:
 - conda-forge
 - robostack
 - khalilahmed724/label/khalilahmed724
+- conda-forge
 dependencies:
 - python=3.8
 - nodejs=14
@@ -25,6 +26,23 @@ dependencies:
 - ros-noetic-turtlebot3-fake
 - ros-noetic-robm
 - ros-noetic-myrobo
+- tensorflow
+- opencv
+- ros-noetic-moveit-msgs
+- ros-noetic-moveit-core
+- ros-noetic-moveit-ros-planning
+- ros-noetic-moveit-ros-move-group
+- ros-noetic-moveit-ros-manipulation
+- ros-noetic-moveit-planners-ompl
+- ros-noetic-moveit-simple-controller-manager
+- robostack ros-noetic-moveit-commander
+- ros-noetic-moveit-ros-control-interface
+- ros-noetic-moveit-setup-assistant
+- ros-noetic-moveit-plugins
+- ros-noetic-moveit-ros
+- ros-noetic-moveit-planners
+- ros-noetic-moveit-python
+- ros-noetic-moveit-visual-tools
 # our stuff
 - robostack::jupyterlab-ros
 - robostack::jupyter-amphion
