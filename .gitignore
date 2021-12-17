@@ -1,0 +1,23 @@
+*.bundle.*
+
+# Build
+jupyter_ros_server.egg-info
+
+# JS-TS
+dist
+build
+*.tsbuildinfo
+jupyter_ros_server/public
+jupyter_ros_server/labextension
+
+# Libraries
+js/node_modules
+
+# Cache
+jupyter_ros_server/**/__pycache__
+
+# Others
+.github/
+.vscode/
+.DS_Store
+.ipynb_checkpoints
