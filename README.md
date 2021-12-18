@@ -1,6 +1,5 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/khalilahmed427/launch01/HEAD)
 
-
 # jupyterlab-ros
 
 A JupyterLab extension for ROS.
