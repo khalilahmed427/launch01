@@ -46,6 +46,8 @@ dependencies:
 - ros-noetic-moveit-planners
 - ros-noetic-moveit-python
 - ros-noetic-moveit-visual-tools
+- pyserial
+- ffmpeg
 # our stuff
 - robostack::jupyterlab-ros
 - robostack::jupyter-amphion
