@@ -27,6 +27,9 @@ dependencies:
 - ros-noetic-robm
 - ros-noetic-myrobo
 - tensorflow
+- opencv
+- libopencv
+- py-opencv
 - ros-noetic-video-stream-opencv
 - ros-noetic-moveit-msgs
 - ros-noetic-moveit-core
